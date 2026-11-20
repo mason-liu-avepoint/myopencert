@@ -1,0 +1,27 @@
+{
+  "id": "did:web:myopencerts.nelify.app:.well-know",
+  "verificationMethod": [
+    {
+      "type": "Multikey",
+      "id": "did:web:myopencerts.nelify.app:.well-know#keys-1",
+      "controller": "did:web:myopencerts.nelify.app:.well-know",
+      "publicKeyMultibase": "zDnaeX6TrQPXRyLYoJL8cmY7oM3pHCGcDc8HF7LuR9qs7rN4Z"
+    }
+  ],
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/multikey/v1"
+  ],
+  "authentication": [
+    "did:web:myopencerts.nelify.app:.well-know#keys-1"
+  ],
+  "assertionMethod": [
+    "did:web:myopencerts.nelify.app:.well-know#keys-1"
+  ],
+  "capabilityInvocation": [
+    "did:web:myopencerts.nelify.app:.well-know#keys-1"
+  ],
+  "capabilityDelegation": [
+    "did:web:myopencerts.nelify.app:.well-know#keys-1"
+  ]
+}

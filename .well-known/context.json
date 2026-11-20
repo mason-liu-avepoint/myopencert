@@ -1,57 +1,106 @@
 {
-    "type": "array",
-    "items": {
-        "type": "object",
-        "properties": {
-            "STF_ID": {
-                "type": "string"
-            },
-            "STF_FULLNAME": {
-                "type": "string"
-            },
-            "STF_PREFNAME": {
-                "type": "string"
-            },
-            "STF_OFF_EMAIL": {
-                "type": "string"
-            },
-            "STF_DEPT": {
-                "type": "string"
-            },
-            "STF_USER_ID": {
-                "type": "string"
-            },
-            "STF_EMP_JOINDATE": {
-                "type": "string"
-            },
-            "STF_EMP_RESIGNDATE": {
-                "type": "string"
-            },
-            "STF_EMP_STATUS": {
-                "type": "string"
-            },
-            "STF_CATEGORY_FUNC": {
-                "type": "string"
-            },
-            "STF_EMP_SPV_ID": {
-                "type": "string"
-            },
-            "STF_EMP_COSTCENTRE": {
-                "type": "string"
-            }
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+
+    "vocab": {
+      "@id": "https://myopencerts.netlify.app/vocab#",
+      "@prefix": true
+    },
+
+    "OpenAttestationCredential": "vocab:OpenAttestationCredential",
+    "EMBEDDED_RENDERER": "vocab:EMBEDDED_RENDERER",
+    "uen": "vocab:uen",
+    "email": "vocab:email",
+
+    "admissionDate": {
+      "@id": "vocab:admissionDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "graduationDate": {
+      "@id": "vocab:graduationDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "cumulativeScore": {
+      "@id": "vocab:cumulativeScore",
+      "@type": "http://www.w3.org/2001/XMLSchema#double"
+    },
+
+    "recipient": {
+      "@id": "vocab:recipient",
+      "@context": {
+        "name": "vocab:recipientName",
+        "nric": "vocab:nric",
+        "studentId": "vocab:studentId"
+      }
+    },
+
+    "qualificationLevel": {
+      "@id": "vocab:qualificationLevel",
+      "@context": {
+        "frameworkName": "vocab:frameworkName",
+        "frameworkVersion": "vocab:frameworkVersion",
+        "code": "vocab:code",
+        "description": "vocab:description"
+      }
+    },
+
+    "fieldOfStudy": {
+      "@id": "vocab:fieldOfStudy",
+      "@context": {
+        "frameworkName": "vocab:frameworkName",
+        "frameworkVersion": "vocab:frameworkVersion",
+        "code": "vocab:code",
+        "description": "vocab:description"
+      }
+    },
+
+    "transcript": {
+      "@id": "vocab:transcript",
+      "@context": {
+        "name": "vocab:courseName",
+        "grade": "vocab:grade",
+        "courseCredit": {
+          "@id": "vocab:courseCredit",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
         },
-        "required": [
-            "STF_ID",
-            "STF_FULLNAME",
-            "STF_PREFNAME",
-            "STF_OFF_EMAIL",
-            "STF_USER_ID",
-            "STF_EMP_JOINDATE",
-            "STF_EMP_RESIGNDATE",
-            "STF_EMP_STATUS",
-            "STF_CATEGORY_FUNC",
-            "STF_EMP_SPV_ID",
-            "STF_EMP_COSTCENTRE"
-        ]
+        "courseCode": "vocab:courseCode",
+        "semester": "vocab:semester",
+        "gpa": "vocab:gpa"
+      }
+    },
+
+    "additionalData": {
+      "@id": "vocab:additionalData",
+      "@context": {
+        "additionalCertId": "vocab:additionalCertId",
+        "merit": "vocab:merit",
+        "studentId": "vocab:studentId",
+        "transcriptId": "vocab:transcriptId",
+        "transcriptDate": {
+          "@id": "vocab:transcriptDate",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "performancerange": "vocab:performancerange",
+
+        "certSignatories": {
+          "@id": "vocab:certSignatories",
+          "@context": {
+            "signature": "vocab:signature",
+            "name": "vocab:signatoryName",
+            "position": "vocab:position",
+            "organisation": "vocab:organisation"
+          }
+        },
+
+        "transcriptSignatories": {
+          "@id": "vocab:transcriptSignatories",
+          "@context": {
+            "signature": "vocab:signature",
+            "position": "vocab:position"
+          }
+        }
+      }
     }
+  }
 }
