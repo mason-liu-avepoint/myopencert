@@ -1,0 +1,57 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "STF_ID": {
+                "type": "string"
+            },
+            "STF_FULLNAME": {
+                "type": "string"
+            },
+            "STF_PREFNAME": {
+                "type": "string"
+            },
+            "STF_OFF_EMAIL": {
+                "type": "string"
+            },
+            "STF_DEPT": {
+                "type": "string"
+            },
+            "STF_USER_ID": {
+                "type": "string"
+            },
+            "STF_EMP_JOINDATE": {
+                "type": "string"
+            },
+            "STF_EMP_RESIGNDATE": {
+                "type": "string"
+            },
+            "STF_EMP_STATUS": {
+                "type": "string"
+            },
+            "STF_CATEGORY_FUNC": {
+                "type": "string"
+            },
+            "STF_EMP_SPV_ID": {
+                "type": "string"
+            },
+            "STF_EMP_COSTCENTRE": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "STF_ID",
+            "STF_FULLNAME",
+            "STF_PREFNAME",
+            "STF_OFF_EMAIL",
+            "STF_USER_ID",
+            "STF_EMP_JOINDATE",
+            "STF_EMP_RESIGNDATE",
+            "STF_EMP_STATUS",
+            "STF_CATEGORY_FUNC",
+            "STF_EMP_SPV_ID",
+            "STF_EMP_COSTCENTRE"
+        ]
+    }
+}
