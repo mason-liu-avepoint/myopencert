@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/security/data-integrity/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BitstringStatusListCredential"
+  ],
+  "issuer": "did:web:myopencerts.nelify.app:.well-know",
+  "validFrom": "2026-11-20T09:25:26.463Z",
+  "credentialSubject": {
+    "id": "https://myopencerts.netlify.app/.well-known/status/72.json#list",
+    "type": "BitstringStatusList",
+    "statusPurpose": "revocation",
+    "encodedList": "H4sIAAAAAAAAA-3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAIC3AYbSVKsAQAAA"
+  },
+  "id": "urn:uuid:01a1f846-6bed-777d-9ae2-ef72f74f9572",
+  "proof": {
+    "type": "DataIntegrityProof",
+    "created": "2026-11-20T09:25:27Z",
+    "verificationMethod": "did:web:myopencerts.nelify.app:.well-know#keys-1",
+    "cryptosuite": "ecdsa-sd-2023",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "u2V0AhVhAUpHcOq4_dIQ3hANfmsbaeMUwAxHcy1CP6viDhFBoR4EmMVGGY2VBARtX3njvgHkxmOOBIDWnefRQSw8tL-7FnFgjgCQC50CLO1pRk0a1Xxl60jF90XYjgzMdn_JYkngJ8L2i2fhYIPfzl8JjCVIbWWxSN9UoVqdbKdxH9kisPdnBK59XKoYXhFhA9GW5XocKdTGbwNKyITUIqwAQjkbrQ8VVABk_yDKgi2nIwYx9I0QG8CXUDrB9M8NwEGxEf9ei-GVAW4m_CeCOKFhAbj1uDz1_W3SrCSvPytpejr_dzm3wvClvQNxC-3ubiX3HLX0nMx3omRAN_yeNlHKhccqxwQ87SqMBdo-LS-rQSFhADeK3Q7SLWiYHjcLXUpcYoOvKmr34jjOGftxXQFV2yusP72e1FoDyiR2CZByqs74munsVYyOr4-Pa3yjL18dBnVhAp6Mt4396EZujGvhSp3YPQEkZ-lkb5wMX1Ntx0tcR1ISCLPe5Geye-DoRdVD63eoY1Iwr7Lr7ipXnwF5RYTO_mYJnL2lzc3VlcmovdmFsaWRGcm9t"
+  }
+}
