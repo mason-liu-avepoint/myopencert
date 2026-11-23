@@ -8,20 +8,20 @@
     "BitstringStatusListCredential"
   ],
   "issuer": "did:web:myopencerts.nelify.app:.well-know",
-  "validFrom": "2026-11-20T09:25:26.463Z",
+  "validFrom": "2026-11-23T07:21:08.573Z",
   "credentialSubject": {
     "id": "https://myopencerts.netlify.app/.well-known/status/72.json#list",
     "type": "BitstringStatusList",
     "statusPurpose": "revocation",
     "encodedList": "H4sIAAAAAAAAA-3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAIC3AYbSVKsAQAAA"
   },
-  "id": "urn:uuid:01a1f846-6bed-777d-9ae2-ef72f74f9572",
+  "id": "urn:uuid:01a20747-b21e-7449-95dd-78459a2c1e9e",
   "proof": {
     "type": "DataIntegrityProof",
-    "created": "2026-11-20T09:25:27Z",
+    "created": "2026-11-23T07:21:08Z",
     "verificationMethod": "did:web:myopencerts.nelify.app:.well-know#keys-1",
     "cryptosuite": "ecdsa-sd-2023",
     "proofPurpose": "assertionMethod",
-    "proofValue": "u2V0AhVhAUpHcOq4_dIQ3hANfmsbaeMUwAxHcy1CP6viDhFBoR4EmMVGGY2VBARtX3njvgHkxmOOBIDWnefRQSw8tL-7FnFgjgCQC50CLO1pRk0a1Xxl60jF90XYjgzMdn_JYkngJ8L2i2fhYIPfzl8JjCVIbWWxSN9UoVqdbKdxH9kisPdnBK59XKoYXhFhA9GW5XocKdTGbwNKyITUIqwAQjkbrQ8VVABk_yDKgi2nIwYx9I0QG8CXUDrB9M8NwEGxEf9ei-GVAW4m_CeCOKFhAbj1uDz1_W3SrCSvPytpejr_dzm3wvClvQNxC-3ubiX3HLX0nMx3omRAN_yeNlHKhccqxwQ87SqMBdo-LS-rQSFhADeK3Q7SLWiYHjcLXUpcYoOvKmr34jjOGftxXQFV2yusP72e1FoDyiR2CZByqs74munsVYyOr4-Pa3yjL18dBnVhAp6Mt4396EZujGvhSp3YPQEkZ-lkb5wMX1Ntx0tcR1ISCLPe5Geye-DoRdVD63eoY1Iwr7Lr7ipXnwF5RYTO_mYJnL2lzc3VlcmovdmFsaWRGcm9t"
+    "proofValue": "u2V0AhVhA3dXaV_C6-WrR6nA8wjLpo2PXny9TbQ1mkfHhp3ABK3axFDKOu0MqkqvbuXSIIfTK2IK7ENSbuYIjVLUEje2TclgjgCQCgwzEHc5vhzZMYpc9yVQ08S3JDjYqMin5Q1RJ8eFovftYIEZIsuN8R387M5GMeLIyYCJaZjmkZF4r_5JFI1vctpIHhFhArPgbTksP9jhHOXYRXDliDrk9lPdQep-4AtCbjrPO4n6N_1XyjXcgFxnb2vKiJ1-tLytVWTnSBPc1vSus2_leKVhAJ7U0vbQpJus1LzMaNeoqLzE6_fVUDU6BJOQO_JLzgK4unPgcS-4W7wdG7E9E9XZpF5kcw0EPwmdo5S9SY1fk-FhA46DFo5c5P4prDkYy_m6oD6vVb3x_ADbpY066RnxFykqywtMoVFsasD-fXgnHy9FRMhvNSCy7l7y0UENn8tX3pFhAG5Lszytr_2OwWspTLN0a-_BEcfcY9giq70L_bN1gOXAiKZ3rRQuxC7eaoD4aId1LnKuRV4ot779qtU_27-IgHoJnL2lzc3VlcmovdmFsaWRGcm9t"
   }
 }
